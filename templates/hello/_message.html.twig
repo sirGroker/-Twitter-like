@@ -1,0 +1,7 @@
+{% if key is defined%}
+
+    <a href="{{ path('app_message', {'id': key}) }}">{{ message }} </a>
+
+{% else %}
+    {{ message }}
+{% endif %}
